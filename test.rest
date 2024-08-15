@@ -1,0 +1,68 @@
+##################################
+POST http://127.0.0.1:5000/category/create
+Content-Type: application/json
+
+{
+    "categoryName": "Mobile",
+    "description": "Mobile 4G 5G"
+}
+
+#### get all products
+
+GET http://127.0.0.1:5000/category/getall
+
+
+##################################
+#### get product by id
+
+GET http://127.0.0.1:5000/category/getbyid/2
+
+##################################
+#### update product by id
+
+PUT http://127.0.0.1:5000/category/updatebyid/3
+Content-Type: application/json
+
+{
+    "categoryName": "Snack",
+    "description": "Snack for fun"
+}
+
+##################################
+#### delete product by id
+
+DELETE http://127.0.0.1:5000/category/deletebyid/1
+
+
+
+#### get all products
+
+GET http://127.0.0.1:5000/product/getall
+
+#### get query products
+
+GET http://127.0.0.1:5000/product/query?page=5&perPage=5
+
+
+#################User
+#### Signup
+
+POST http://127.0.0.1:5000/auth/signup
+Content-Type: application/json
+
+{
+    "username": "boonanek1234",
+    "email": "boonanek1234@gmail.com",
+    "password": "too123456"
+}
+
+#################User
+#### Signin
+
+POST http://127.0.0.1:5000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "boonanek1234@gmail.com",
+    "password": "too123456"
+}
